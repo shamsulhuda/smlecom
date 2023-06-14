@@ -8,6 +8,12 @@ export default function Header() {
           <div className="logo">
             <img src={logo} alt="siteLogo" srcSet={logo} />
           </div>
+          <div>
+            <a href="/shop">Shop</a>
+            <a href="/orders">Orders</a>
+            <a href="/inventory">Inventory</a>
+            <a href="/about">About</a>
+          </div>
         </nav>
       </div>
     </div>
