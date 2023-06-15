@@ -1,0 +1,49 @@
+.card-content img {
+  width: 100%;
+  height: 286px;
+  border-radius: 8px;
+}
+.card-content {
+  width: auto;
+  height: 510px;
+}
+.card {
+  position: relative;
+  padding: 7px;
+  border: 1px solid #95a0a7;
+  border-radius: 8px;
+}
+.merchantizing p {
+  margin: 6px 0;
+}
+.merchantizing {
+  margin-top: 20px;
+}
+.card button.btn.addToCart {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 48px;
+  color: #0e161a;
+  background-color: #ffe0b3;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.0125em;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  border: 1px solid #95a0a7;
+  border-radius: 0px 0px 8px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card button.btn.addToCart span {
+  margin: 0 5px;
+}
+.card button.btn.addToCart:hover {
+  background-color: orange;
+}
