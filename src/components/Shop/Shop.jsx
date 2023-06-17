@@ -26,6 +26,7 @@ export default function Shop() {
     }
     setCart(savedCart);
   }, [products]);
+
   const handleAddToCart = (selectedProduct) => {
     let newCart = [];
     const exists = cart.find((product) => product.id === selectedProduct.id);
@@ -33,8 +34,8 @@ export default function Shop() {
       selectedProduct.quantity = 1;
       newCart = [...cart, selectedProduct];
     } else {
-      const rest = cart.filter((product) => product.id !== selectedProduct.is);
       exists.quantity = exists.quantity + 1;
+      const rest = cart.filter((product) => product.id !== selectedProduct.id);
       newCart = [...rest, exists];
     }
     setCart(newCart);
