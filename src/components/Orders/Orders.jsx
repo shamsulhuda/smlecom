@@ -5,7 +5,7 @@ export default function Orders() {
   const products = useLoaderData();
   return (
     <div>
-      <h2>Orders ({products.length})</h2>
+      <h2>Orders ({products.products.length})</h2>
     </div>
   );
 }
