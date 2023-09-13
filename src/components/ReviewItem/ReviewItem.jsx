@@ -1,7 +1,9 @@
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./ReviewItem.css";
-export default function ReviewItem({ product }) {
-  const { name, price, quantity, img } = product;
+export default function ReviewItem({ product, handleRemoveItem }) {
+  const { id, name, price, quantity, img } = product;
   return (
     <div className="review-item">
       <div>
@@ -9,7 +11,7 @@ export default function ReviewItem({ product }) {
       </div>
       <div className="review-details-container">
         <div className="review-deatils">
-          <p>{name}</p>
+          <h4>{name}</h4>
           <p>
             <small>Price: {price}</small>
           </p>
@@ -18,7 +20,12 @@ export default function ReviewItem({ product }) {
           </p>
         </div>
         <div className="delete-container">
-          <button className="delete">delete</button>
+          <button className="delete-btn" onClick={() => handleRemoveItem(id)}>
+            <FontAwesomeIcon
+              className="delete-icon"
+              icon={faTrashAlt}
+            ></FontAwesomeIcon>
+          </button>
         </div>
       </div>
     </div>

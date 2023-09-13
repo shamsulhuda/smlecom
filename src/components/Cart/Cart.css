@@ -6,3 +6,12 @@
 .cart-container {
   background-color: #ffe0b3;
 }
+button.btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 8px 10px;
+  background: #ff8585;
+  border: 1px solid #dddddd;
+  color: #ffffff;
+  font-size: 15px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Cart.css";
 
-export default function Cart({ cart }) {
+export default function Cart({ cart, clearCart, children }) {
   let total = 0;
   let shipping = 0;
   let quantity = 0;
@@ -22,6 +22,14 @@ export default function Cart({ cart }) {
         <p>Total Shipping: ${shipping}</p>
         <p>Tax: ${tax}</p>
         <h3>Grand Total: ${grandTotal.toFixed(2)}</h3>
+      </div>
+      <div className="cart-footer">
+        <div className="action-buttons">
+          <button type="button" className="btn" onClick={clearCart}>
+            Clear Cart
+          </button>
+          {children}
+        </div>
       </div>
     </div>
   );
